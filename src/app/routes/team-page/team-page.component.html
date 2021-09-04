@@ -1,4 +1,4 @@
-<app-header [onBack]="back"></app-header>
+<app-header [back]="back"></app-header>
 <div class="flex items-center flex-wrap p-4">
     <ng-container *ngFor="let fixture of fixtures">
         <app-fixture-tile class="m-4" [fixture]="fixture" [mood]="getMoodForFixture(fixture)"></app-fixture-tile>
