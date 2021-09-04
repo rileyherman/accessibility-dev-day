@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1630721015763,
+  "timestamp": 1630721348484,
   "index": "/accessibility-dev-day/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/accessibility-dev-day/favicon.ico",
         "/accessibility-dev-day/index.html",
-        "/accessibility-dev-day/main.762899a1cf407751926b.js",
+        "/accessibility-dev-day/main.b12fc821092d21062b1e.js",
         "/accessibility-dev-day/manifest.webmanifest",
         "/accessibility-dev-day/polyfills.00096ed7d93ed26ee6df.js",
         "/accessibility-dev-day/runtime.7b63b9fd40098a2e8207.js",
@@ -52,8 +52,8 @@
     "/accessibility-dev-day/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/accessibility-dev-day/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/accessibility-dev-day/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/accessibility-dev-day/index.html": "048733cf89713af0083b08c2a208c270be000933",
-    "/accessibility-dev-day/main.762899a1cf407751926b.js": "2521b2f2a15ac230eaf0675e05102abd44c49a31",
+    "/accessibility-dev-day/index.html": "3d1af9d471aac295075ecc4787778d1fce795193",
+    "/accessibility-dev-day/main.b12fc821092d21062b1e.js": "37d0a37827a6362945e5471a01c07a9bc3abbdc8",
     "/accessibility-dev-day/manifest.webmanifest": "925a697ea445e2a4cb12ce3743b33e9e2d913484",
     "/accessibility-dev-day/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "/accessibility-dev-day/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
