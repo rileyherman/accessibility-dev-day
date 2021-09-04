@@ -6,8 +6,7 @@
     "start": "ng build --prod && http-server -p 4202 -c-1 dist/accessibility-dev-day",
     "build": "ng build",
     "lint": "ng lint",
-    "predeploy": "ng build --prod --base-href=/accessibility-dev-day/",
-    "deploy": "npx gh-pages -d dist/accessibility-dev-day"
+    "deploy": "ng build --prod --base-href=/accessibility-dev-day/ && npx gh-pages -d dist/accessibility-dev-day"
   },
   "private": true,
   "dependencies": {
