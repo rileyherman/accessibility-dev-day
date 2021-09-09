@@ -4,7 +4,7 @@ import { Fixture, Mood } from 'src/app/model';
 @Component({
   selector: 'app-fixture-tile',
   template: `
-  <div class="border p-2">
+  <div class="border shadow p-2">
     <div class="flex items-center mb-2">
       <app-team-tile class="mr-4" [team]="fixture.home.team"></app-team-tile>
       <ng-container *ngIf="happy; else worried">
@@ -15,7 +15,7 @@ import { Fixture, Mood } from 'src/app/model';
       </ng-template>
       <app-team-tile [team]="fixture.away.team"></app-team-tile>
     </div>
-    <div class="text-sm text-gray-700">{{fixture.date}}</div>
+    <div class="text-sm text-gray-700 text-center">{{date}}</div>
   </div>
   `
 })
@@ -26,6 +26,10 @@ export class FixtureTileComponent {
 
   get happy(): boolean {
     return this.mood === Mood.HAPPY;
+  }
+
+  get date(): string {
+    return new Date(this.fixture.date).toDateString();
   }
 
 }

@@ -4,7 +4,7 @@ import { Team } from 'src/app/model';
 @Component({
   selector: 'app-team-tile',
   template: `
-    <div class="cursor-pointer bg-gray-100 text-gray-900 text-center shadow-sm hover:shadow-md grid grid-cols-1 gap-2 p-2 border">
+    <div (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <img [src]="team.logo" />
     </div>
   `
@@ -12,5 +12,11 @@ import { Team } from 'src/app/model';
 export class TeamTileComponent {
 
   @Input() team!: Team;
+  @Input() onClick!: () => void;
 
+  handleClick(): void {
+    if (!!this.onClick) {
+      this.onClick()
+    }
+  }
 }

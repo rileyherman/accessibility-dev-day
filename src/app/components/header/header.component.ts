@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   template: `
-    <div class="flex items-center justify-between p-6 bg-gray-100 text-gray-900">
+    <div class="flex items-center justify-between p-6 bg-gray-100 text-gray-900 border border-l-0 border-t-0 border-r-0 shadow">
       <div class="flex items-center text-lg">
         <span [class.invisible]="!back" (click)="back()" class="material-icons mr-4 cursor-pointer">arrow_back</span>
         <span>Is the replay worth the watch?</span>

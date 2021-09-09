@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AccessibilityPageComponent } from './routes/accessibility-page/accessibility-page.component';
 import { AboutPageComponent } from './routes/about-page/about-page.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AboutPageComponent } from './routes/about-page/about-page.component';
     FixtureTileComponent,
     AccessibilityPageComponent,
     AboutPageComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,

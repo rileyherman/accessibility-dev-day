@@ -1,11 +1,14 @@
 <app-header></app-header>
-<div class="grid grid-cols-1 gap-4 p-4">
-    <div class="flex items-center justify-center">
-        <input class="p-2 border rounded w-64" type="text" [formControl]="searchFormControl" placeholder="Find your team" />
+<app-content>
+    <div class="grid grid-cols-1 gap-4">
+        <div class="flex items-center justify-center">
+            <input class="p-2 border rounded w-64 text-sm focus:ring-2" type="text" [formControl]="searchFormControl"
+                placeholder="Find your team" />
+        </div>
+        <div class="flex items-center flex-wrap">
+            <ng-container *ngFor="let team of teams">
+                <app-team-tile class="m-4" [team]="team" [onClick]="goToTeam(team.id)"></app-team-tile>
+            </ng-container>
+        </div>
     </div>
-    <div class="flex items-center flex-wrap">
-        <ng-container *ngFor="let team of teams">
-            <app-team-tile class="m-4" [team]="team" (click)="goToTeam(team.id)"></app-team-tile>
-        </ng-container>
-    </div>
-</div>
+</app-content>

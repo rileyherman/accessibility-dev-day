@@ -32,8 +32,8 @@ export class HomePageComponent implements OnInit, OnDestroy {
     this.valueChangesSub.unsubscribe();
   }
 
-  goToTeam(teamId: number): void {
-    this.router.navigate(['team', teamId]);
+  goToTeam(teamId: number): () => void {
+    return () => this.router.navigate(['team', teamId]);
   }
 
 }
