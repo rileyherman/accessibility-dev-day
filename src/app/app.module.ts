@@ -8,8 +8,8 @@ import { environment } from '../environments/environment';
 import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './routes/home-page/home-page.component';
 import { TeamPageComponent } from './routes/team-page/team-page.component';
-import { TeamTileComponent } from './components/team-tile/team-tile.component';
-import { FixtureTileComponent } from './components/fixture-tile/fixture-tile.component';
+import { TeamComponent } from './components/team/team.component';
+import { FixtureComponent } from './components/fixture/fixture.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AccessibilityPageComponent } from './routes/accessibility-page/accessibility-page.component';
@@ -22,8 +22,8 @@ import { ContentComponent } from './components/content/content.component';
     HeaderComponent,
     HomePageComponent,
     TeamPageComponent,
-    TeamTileComponent,
-    FixtureTileComponent,
+    TeamComponent,
+    FixtureComponent,
     AccessibilityPageComponent,
     AboutPageComponent,
     ContentComponent,

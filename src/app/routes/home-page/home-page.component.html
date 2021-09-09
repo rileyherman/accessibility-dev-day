@@ -7,7 +7,7 @@
         </div>
         <div class="flex items-center flex-wrap">
             <ng-container *ngFor="let team of teams">
-                <app-team-tile class="m-4" [team]="team" [onClick]="goToTeam(team.id)"></app-team-tile>
+                <app-team class="m-4" [team]="team" [onClick]="goToTeam(team.id)"></app-team>
             </ng-container>
         </div>
     </div>

@@ -2,7 +2,7 @@
 <app-content>
     <div class="flex items-center flex-wrap">
         <ng-container *ngFor="let fixture of fixtures">
-            <app-fixture-tile class="m-4" [fixture]="fixture" [mood]="getMoodForFixture(fixture)"></app-fixture-tile>
+            <app-fixture class="m-4" [fixture]="fixture" [mood]="getMoodForFixture(fixture)"></app-fixture>
         </ng-container>
     </div>
 </app-content>
