@@ -2,11 +2,11 @@
   "name": "accessibility-dev-day",
   "version": "0.0.0",
   "scripts": {
-    "dev": "ng serve",
-    "start": "ng build --prod && http-server -p 4202 -c-1 dist/accessibility-dev-day",
+    "dev": "PURGE=false ng serve",
+    "start": "PURGE=true ng build --prod && http-server -p 4202 -c-1 dist/accessibility-dev-day",
     "build": "ng build",
     "lint": "ng lint",
-    "deploy": "ng build --prod --base-href=/accessibility-dev-day/ && npx gh-pages -d dist/accessibility-dev-day"
+    "deploy": "PURGE=true ng build --prod --base-href=/accessibility-dev-day/ && npx gh-pages -d dist/accessibility-dev-day"
   },
   "private": true,
   "dependencies": {
