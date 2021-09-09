@@ -1,4 +1,5 @@
 export enum Mood {
     HAPPY = 'HAPPY',
-    WORRIED = 'WORRIED'
+    CLOSE = 'CLOSE',
+    SAD = 'SAD'
 }

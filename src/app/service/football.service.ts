@@ -65,8 +65,10 @@ export class FootballService {
 }
 
 function getMoodForGoals(cheeringForGoals: number, cheeringAgainstGoals: number): Mood {
-  if (cheeringForGoals >= cheeringAgainstGoals || cheeringAgainstGoals - cheeringForGoals < 2) {
+  if (cheeringForGoals - cheeringAgainstGoals > 1) {
     return Mood.HAPPY;
+  } else if (cheeringForGoals - cheeringAgainstGoals < 1 && cheeringAgainstGoals - cheeringForGoals < 1) {
+    return Mood.CLOSE;
   }
-  return Mood.WORRIED;
+  return Mood.SAD;
 }

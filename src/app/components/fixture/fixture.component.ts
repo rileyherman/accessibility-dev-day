@@ -4,16 +4,11 @@ import { Fixture, Mood } from 'src/app/model';
 @Component({
   selector: 'app-fixture',
   template: `
-  <div class="border shadow p-2">
+  <div [class.ring-green-300]="happy" [class.ring-yellow-300]="close" [class.ring-red-300]="sad" class="border shadow p-2 ring-2">
     <div class="flex items-center mb-2">
-      <app-team class="mr-4" [team]="fixture.home.team"></app-team>
-      <ng-container *ngIf="happy; else worried">
-        <div class="mr-4 text-lg text-gray-900">HAPPY</div>
-      </ng-container>
-      <ng-template #worried>
-        <div class="mr-4 text-lg text-gray-900">WORRIED</div>
-      </ng-template>
-      <app-team [team]="fixture.away.team"></app-team>
+      <app-team class="mr-4" [team]="fixture.away.team"></app-team>
+      <div class="mr-4 text-lg text-gray-900">VS</div>
+      <app-team [team]="fixture.home.team"></app-team>
     </div>
     <div class="text-sm text-gray-700 text-center">{{date}}</div>
   </div>
@@ -26,6 +21,14 @@ export class FixtureComponent {
 
   get happy(): boolean {
     return this.mood === Mood.HAPPY;
+  }
+  
+  get close(): boolean {
+    return this.mood === Mood.CLOSE;
+  }
+  
+  get sad(): boolean {
+    return this.mood === Mood.SAD;
   }
 
   get date(): string {
