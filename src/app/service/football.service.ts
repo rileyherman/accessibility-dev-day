@@ -27,12 +27,12 @@ export class FootballService {
             home: {
               team: fixture.teams.home,
               goals: fixture.goals.home,
-              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away),
+              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, fixture.teams.home.id == teamId),
             } as FixtureTeam,
             away: {
               team: fixture.teams.away,
               goals: fixture.goals.away,
-              mood: getMoodForGoals(fixture.goals.away, fixture.goals.home),
+              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, fixture.teams.away.id == teamId),
             } as FixtureTeam,
             date: new Date(fixture.fixture.date),
           } as Fixture)))
@@ -64,10 +64,13 @@ export class FootballService {
   }
 }
 
-function getMoodForGoals(cheeringForGoals: number, cheeringAgainstGoals: number): Mood {
-  if (cheeringForGoals - cheeringAgainstGoals > 1) {
+function getMoodForGoals(homeGoals: number, awayGoals: number, cheeringForHome: boolean): Mood {
+  let cheeringForGoals = cheeringForHome ? homeGoals : awayGoals;
+  let cheeringAgainstGoals = cheeringForHome ? awayGoals : homeGoals;
+
+  if (cheeringForGoals - cheeringAgainstGoals >= 2) {
     return Mood.HAPPY;
-  } else if (cheeringForGoals - cheeringAgainstGoals < 1 && cheeringAgainstGoals - cheeringForGoals < 1) {
+  } else if (cheeringForGoals - cheeringAgainstGoals < 2 && cheeringForGoals - cheeringAgainstGoals > -2) {
     return Mood.CLOSE;
   }
   return Mood.SAD;
