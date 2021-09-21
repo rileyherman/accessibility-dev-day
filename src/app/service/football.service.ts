@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { filter, map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { Fixture, FixtureTeam, Mood, Team } from '../model';
 // @ts-ignore
 import FIXTURES from '../data/epl-fixtures.json';
