@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
         <span [class.invisible]="!back" (click)="back()" class="material-icons mr-4 cursor-pointer">arrow_back</span>
         <span>Is the replay worth it?</span>
       </div>
-      <div class="grid grid-cols-2 gap-4 text-center hidden xl:block">
-        <a class="cursor-pointer" (click)="about()">About</a>
+      <div class="flex items-center hidden xl:block">
+        <a class="cursor-pointer mr-4" (click)="about()">About</a>
         <a class="cursor-pointer" (click)="accessibility()">Accessiblility</a>
       </div>
-      <div class="grid grid-cols-2 gap-2 text-center xl:hidden">
-        <span (click)="about()" class="material-icons cursor-pointer">help_outline</span>
+      <div class="flex items-center xl:hidden">
+        <span (click)="about()" class="material-icons cursor-pointer mr-4">help_outline</span>
         <span (click)="accessibility()" class="material-icons cursor-pointer">accessibility</span>
       </div>
     </div>
