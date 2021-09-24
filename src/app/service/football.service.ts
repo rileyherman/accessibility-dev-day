@@ -15,9 +15,6 @@ export class FootballService {
   constructor() { }
 
   getFixturesByTeam(teamId: number): Observable<Fixture[]> {
-    if (!teamId) {
-      return of([]);
-    }
     return of(FIXTURES)
       .pipe(
         map(response => response.response
