@@ -24,7 +24,7 @@
         "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
       ],
       "cacheConfig": {
-        "maxAge": "7d",
+        "maxAge": "366d",
         "maxSize": 50
       }
     }
