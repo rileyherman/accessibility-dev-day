@@ -14,16 +14,18 @@
           "/*.js"
         ]
       }
-    },
+    }
+  ],
+  "dataGroups": [
     {
       "name": "assets",
-      "installMode": "lazy",
-      "updateMode": "lazy",
-      "resources": {
-        "files": [
-          "/assets/**",
-          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
-        ]
+      "urls": [
+        "/assets/**",
+        "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+      ],
+      "cacheConfig": {
+        "maxAge": "7d",
+        "maxSize": 50
       }
     }
   ]
