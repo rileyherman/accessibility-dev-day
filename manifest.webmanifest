@@ -1,7 +1,7 @@
 {
   "name": "accessibility-dev-day",
   "short_name": "accessibility-dev-day",
-  "theme_color": "#1976d2",
+  "theme_color": "#F9FAFB",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
