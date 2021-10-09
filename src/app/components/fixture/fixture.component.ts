@@ -22,11 +22,11 @@ export class FixtureComponent {
   get happy(): boolean {
     return this.mood === Mood.HAPPY;
   }
-  
+
   get close(): boolean {
     return this.mood === Mood.CLOSE;
   }
-  
+
   get sad(): boolean {
     return this.mood === Mood.SAD;
   }

@@ -16,11 +16,11 @@ export class TeamComponent {
 
   handleClick(): void {
     if (!!this.onClick) {
-      this.onClick()
+      this.onClick();
     }
   }
 
   get logo(): string {
-    return `assets/logos/${this.team.id}.webp`
+    return `assets/logos/${this.team.id}.webp`;
   }
 }

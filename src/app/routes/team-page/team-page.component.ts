@@ -19,7 +19,7 @@ export class TeamPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.pipe(
-      tap(params => this.teamId = params.teamId),
+      tap(params => this.teamId = +params.teamId),
       mergeMap(() => this.footballService.getFixturesByTeam(this.teamId))
     ).subscribe(f => this.fixtures = f);
   }

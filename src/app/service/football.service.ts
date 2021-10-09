@@ -18,18 +18,18 @@ export class FootballService {
     return of(FIXTURES)
       .pipe(
         map(response => response.response
-          .filter((fixture: any) => fixture.teams.home.id == teamId || fixture.teams.away.id == teamId)
+          .filter((fixture: any) => fixture.teams.home.id === teamId || fixture.teams.away.id === teamId)
           .map((fixture: any) => ({
             id: fixture.fixture.id,
             home: {
               team: fixture.teams.home,
               goals: fixture.goals.home,
-              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, fixture.teams.home.id == teamId),
+              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, +fixture.teams.home.id === teamId),
             } as FixtureTeam,
             away: {
               team: fixture.teams.away,
               goals: fixture.goals.away,
-              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, fixture.teams.away.id == teamId),
+              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, +fixture.teams.away.id === teamId),
             } as FixtureTeam,
             date: new Date(fixture.fixture.date),
           } as Fixture)))
@@ -62,8 +62,8 @@ export class FootballService {
 }
 
 function getMoodForGoals(homeGoals: number, awayGoals: number, cheeringForHome: boolean): Mood {
-  let cheeringForGoals = cheeringForHome ? homeGoals : awayGoals;
-  let cheeringAgainstGoals = cheeringForHome ? awayGoals : homeGoals;
+  const cheeringForGoals = cheeringForHome ? homeGoals : awayGoals;
+  const cheeringAgainstGoals = cheeringForHome ? awayGoals : homeGoals;
 
   if (cheeringForGoals - cheeringAgainstGoals >= 2) {
     return Mood.HAPPY;

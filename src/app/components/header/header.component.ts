@@ -29,7 +29,7 @@ export class HeaderComponent {
   about = () => {
     this.router.navigate(['about']);
   }
-  
+
   accessibility = () => {
     this.router.navigate(['accessibility']);
   }
