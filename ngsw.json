@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1633741031838,
+  "timestamp": 1633741681601,
   "index": "/accessibility-dev-day/index.html",
   "assetGroups": [
     {
@@ -24,7 +24,7 @@
     {
       "name": "assets",
       "installMode": "lazy",
-      "updateMode": "prefetch",
+      "updateMode": "lazy",
       "cacheQueryOptions": {
         "ignoreVary": true
       },
