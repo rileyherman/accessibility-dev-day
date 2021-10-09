@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Task 3.a - Make like OJ and focus
+    Many users only use the keyboard to navigate your site. They often use visual cues such as 
+    the outline that happens when you focus an element. This doesn't mean they can't use the 
+    input, it just means that they will have a more frustrating experience.
+*/
+input:focus {
+    outline: none !important;
+}
+
+/* Task 3.b - Mouse trap
+    In the last task we excluded keyboard users - mouse users are even easier to exclude with a 
+    teeny bit of css. Why would you do this? I don't know, I'm just trying to be an asshole. 
+*/
+
+*, *:hover {
+    cursor: none;
+}
+
+/* Task 3.c - Font of youth
+    Reducing the font size on the body component not only affects every component without a specified
+    font size, it affects reader mode as well. Reader mode can be enabled in Chrome using 
+    chrome://flags/#enable-reader-mode. This could be disabled for a variety of reasons, 
+*/
+body {
+    pointer-events: none; /* for 3.b */
+    font-size: 1px;
+}
