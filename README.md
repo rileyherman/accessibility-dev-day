@@ -22,10 +22,9 @@ The site gets its data from the .json files in the src/app/data folder. If you'r
 
 It's an Angular 11 PWA using TailwindCSS. It's NPM so a simple `npm install` should be enough to get you going. There are a few useful commands (all can be found in the [package.json](./package.json)): 
 
-* `npm run lint`: linter using tslint.json. I know, I know, use eslint. I was lazy.
 * `npm run dev`: start in development mode. This does all the nifty reloading and stuff for when you're actually writing code. http://localhost:4200/
-* `npm run start`: start in production mode (but, you know, locally). Purges all the extra styles; doesn't restart on changes, that kind of thing. If you want to run reports of any kind, use this as it better mimics what's going on when it's actually deployed somewhere. http://localhost:4202/
-* `npm run deploy`: packages everything up and deploys to github pages. THIS ONLY WORKS IF YOU FORK THE REPO. It's a PWA so it should work on mobile - this is one way to be able to interact with the site on you cell phone. For me the url would be https://rileyherman.github.io/accessibility-dev-day/ but it depends on your github username. 
+* `npm run start`: start in production mode (but, you know, locally). Purges all the extra styles; doesn't restart on changes; that kind of thing. If you want to run reports of any kind, use this as it better mimics what's going on when it's actually deployed somewhere. http://localhost:4202/
+* `npm run deploy`: packages everything up and deploys to github pages. THIS ONLY WORKS IF YOU FORK THE REPO. It's a PWA so it should work on mobile - this is one way to be able to interact with the site on your cell phone. For me the url would be https://rileyherman.github.io/accessibility-dev-day/ 
 
 Now for a tour of the code itself. It's an Angular app so a lot of it is basically the things you need to have an Angular app. I'd encourage you to look at app-routing.module.ts and click into the route components: the about page, the home page that displays all of the teams, and the team page that takes a team id and displays all of the fixtures and whether I should watch them. There are a couple of reusable components for layout - header is the header on every page, content is just a wrapper for some padding in the body of the page. There also a team component and a fixture component that display teams and fixtures as cards. Feel free to change anything you want.
 
