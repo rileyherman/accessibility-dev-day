@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1633742499685,
+  "timestamp": 1634321674171,
   "index": "/accessibility-dev-day/index.html",
   "assetGroups": [
     {
@@ -13,39 +13,93 @@
       "urls": [
         "/accessibility-dev-day/favicon.ico",
         "/accessibility-dev-day/index.html",
-        "/accessibility-dev-day/main.f5b62b954f49561c6f4d.js",
+        "/accessibility-dev-day/main.f7540e68c43bd9c582e2.js",
         "/accessibility-dev-day/manifest.webmanifest",
         "/accessibility-dev-day/polyfills.00096ed7d93ed26ee6df.js",
         "/accessibility-dev-day/runtime.7b63b9fd40098a2e8207.js",
-        "/accessibility-dev-day/styles.47fa9c9c554844bda22c.css"
+        "/accessibility-dev-day/styles.8f98fdb54b80d2d5d642.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "lazy",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/accessibility-dev-day/assets/font.woff2",
+        "/accessibility-dev-day/assets/icons/icon-128x128.png",
+        "/accessibility-dev-day/assets/icons/icon-144x144.png",
+        "/accessibility-dev-day/assets/icons/icon-152x152.png",
+        "/accessibility-dev-day/assets/icons/icon-192x192.png",
+        "/accessibility-dev-day/assets/icons/icon-384x384.png",
+        "/accessibility-dev-day/assets/icons/icon-512x512.png",
+        "/accessibility-dev-day/assets/icons/icon-72x72.png",
+        "/accessibility-dev-day/assets/icons/icon-96x96.png",
+        "/accessibility-dev-day/assets/logos/33.webp",
+        "/accessibility-dev-day/assets/logos/34.webp",
+        "/accessibility-dev-day/assets/logos/38.webp",
+        "/accessibility-dev-day/assets/logos/39.webp",
+        "/accessibility-dev-day/assets/logos/40.webp",
+        "/accessibility-dev-day/assets/logos/41.webp",
+        "/accessibility-dev-day/assets/logos/42.webp",
+        "/accessibility-dev-day/assets/logos/44.webp",
+        "/accessibility-dev-day/assets/logos/45.webp",
+        "/accessibility-dev-day/assets/logos/46.webp",
+        "/accessibility-dev-day/assets/logos/47.webp",
+        "/accessibility-dev-day/assets/logos/48.webp",
+        "/accessibility-dev-day/assets/logos/49.webp",
+        "/accessibility-dev-day/assets/logos/50.webp",
+        "/accessibility-dev-day/assets/logos/51.webp",
+        "/accessibility-dev-day/assets/logos/52.webp",
+        "/accessibility-dev-day/assets/logos/55.webp",
+        "/accessibility-dev-day/assets/logos/63.webp",
+        "/accessibility-dev-day/assets/logos/66.webp",
+        "/accessibility-dev-day/assets/logos/71.webp"
       ],
       "patterns": []
     }
   ],
-  "dataGroups": [
-    {
-      "name": "assets",
-      "patterns": [
-        "\\/assets\\/.*",
-        "\\/[^/]*\\.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
-      ],
-      "strategy": "performance",
-      "maxSize": 50,
-      "maxAge": 604800000,
-      "cacheQueryOptions": {
-        "ignoreVary": true
-      },
-      "version": 1
-    }
-  ],
+  "dataGroups": [],
   "hashTable": {
+    "/accessibility-dev-day/assets/font.woff2": "66c97c34aaa82b71f6c328b3d3fed87ca9becc4a",
+    "/accessibility-dev-day/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/accessibility-dev-day/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/accessibility-dev-day/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/accessibility-dev-day/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/accessibility-dev-day/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/accessibility-dev-day/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/accessibility-dev-day/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/accessibility-dev-day/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/accessibility-dev-day/assets/logos/33.webp": "e6d73c6b51a021741ede68e158abdcf43a99acae",
+    "/accessibility-dev-day/assets/logos/34.webp": "efc450d836dc1106747155dc780e92251a56c404",
+    "/accessibility-dev-day/assets/logos/38.webp": "4e98a3fcca44572fbd3ef2dacdcc27e976802113",
+    "/accessibility-dev-day/assets/logos/39.webp": "c5aa9e72c4ff66ea2d60e3dfcf28936eb38f3b99",
+    "/accessibility-dev-day/assets/logos/40.webp": "97a438ed41d9ed0dde7144b2d3a4da74b3e59850",
+    "/accessibility-dev-day/assets/logos/41.webp": "26e8c3ceb0af2df350d4e0fb6fc8b0b0d6968656",
+    "/accessibility-dev-day/assets/logos/42.webp": "606bc1faee28c752c01b922e1c293d8750fc67dc",
+    "/accessibility-dev-day/assets/logos/44.webp": "56c91c066c3ea6835d79ce00dac1c157ae9baed7",
+    "/accessibility-dev-day/assets/logos/45.webp": "85b05c91f1949708dc4ecb6d8964ce8872955dea",
+    "/accessibility-dev-day/assets/logos/46.webp": "841fc9e8723facc273a737ce81821b085a6e936e",
+    "/accessibility-dev-day/assets/logos/47.webp": "eb2b426b4e5205493cae5e44bddfdce0f78da2e7",
+    "/accessibility-dev-day/assets/logos/48.webp": "ed79696e0c3582e915d794b36da52dbc12baa48b",
+    "/accessibility-dev-day/assets/logos/49.webp": "0fbc93e649f791c14427a153e00b2bcce068a9ca",
+    "/accessibility-dev-day/assets/logos/50.webp": "669ed75aa932adbfcdb3f1f8b01c28e23946ac42",
+    "/accessibility-dev-day/assets/logos/51.webp": "c20b06fb0a700ce3d57f5fecc137eb7f8244bf6e",
+    "/accessibility-dev-day/assets/logos/52.webp": "0a69304ebe705baf10a0d0dc667e11275e423ae4",
+    "/accessibility-dev-day/assets/logos/55.webp": "90036ae026939242761d83871c8ccb17e060ede5",
+    "/accessibility-dev-day/assets/logos/63.webp": "b03349880373d6a56a6262d5d7eeec1bfa8bbef8",
+    "/accessibility-dev-day/assets/logos/66.webp": "b001d7186094e9d26dd609d9bd508f20d4793bd2",
+    "/accessibility-dev-day/assets/logos/71.webp": "1082034ff2aa3118088c829e66be05702af01c47",
     "/accessibility-dev-day/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/accessibility-dev-day/index.html": "648cfa2bf1a79c230b4a94c6e3554356e0a3dc3c",
-    "/accessibility-dev-day/main.f5b62b954f49561c6f4d.js": "3b53a5fcd7143ef85f13e5a7d83222d606fe059d",
+    "/accessibility-dev-day/index.html": "5a1f234aad06bb68be8ae9480548b0d75bf3ce87",
+    "/accessibility-dev-day/main.f7540e68c43bd9c582e2.js": "da08385441e0bfc0081c98303e4f205a46ce947b",
     "/accessibility-dev-day/manifest.webmanifest": "1e0c7cc69b590f3bc10d40090c2eefb2196e37ea",
     "/accessibility-dev-day/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "/accessibility-dev-day/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/accessibility-dev-day/styles.47fa9c9c554844bda22c.css": "7014d2877a54a4feb10b999289e4a588cafa677a"
+    "/accessibility-dev-day/styles.8f98fdb54b80d2d5d642.css": "13d24f6f724b3d21c803d5ff867e610d0a1b0b1a"
   },
   "navigationUrls": [
     {
