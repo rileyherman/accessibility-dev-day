@@ -6,7 +6,7 @@ import { Team } from 'src/app/model';
   template: `
     <div (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <!-- 
-        Task 1 - Alt-on Brown's Recipe Book
+        Task 1 - Hey now - you're an alt star
 
         Here we're displaying a team's logo. Currently the alt text is blank - I want you to write it. 
         Hint: the team name is team.name - to use it you'll need to bind the alt attribute.
