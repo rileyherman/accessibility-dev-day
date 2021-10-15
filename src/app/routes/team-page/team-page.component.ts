@@ -21,7 +21,7 @@ export class TeamPageComponent implements OnInit {
     this.activatedRoute.params.pipe(
       tap(params => this.teamId = +params.teamId),
       mergeMap(() => this.footballService.getFixturesByTeam(this.teamId))
-    ).subscribe(f => this.fixtures = f);
+    ).subscribe(f => this.fixtures = f.sort((a: Fixture, b: Fixture) => b.date.getTime() - a.date.getTime()));
   }
 
   getMoodForFixture(fixture: Fixture): Mood {
