@@ -1,8 +1,10 @@
 <app-header [back]="back"></app-header>
 <app-content>
-    <div class="flex items-center flex-wrap">
+    <div class="fixture-container">
+        <div class="left-arrow"><span class="material-icons cursor-pointer">arrow_back</span></div>
         <ng-container *ngFor="let fixture of fixtures">
-            <app-fixture class="m-4" [fixture]="fixture" [mood]="getMoodForFixture(fixture)"></app-fixture>
+            <app-fixture class="fixture" [fixture]="fixture" [mood]="getMoodForFixture(fixture)"></app-fixture>
         </ng-container>
+        <div class="right-arrow"><span class="material-icons cursor-pointer">arrow_forward</span></div>
     </div>
 </app-content>
