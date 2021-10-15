@@ -11,11 +11,9 @@ import { Router } from '@angular/router';
       </div>
       <div class="flex items-center hidden xl:block text-lg">
         <a class="cursor-pointer mr-4" (click)="about()">About</a>
-        <a class="cursor-pointer" (click)="accessibility()">Accessiblility</a>
       </div>
       <div class="flex items-center xl:hidden">
         <span (click)="about()" class="material-icons cursor-pointer mr-4">help_outline</span>
-        <span (click)="accessibility()" class="material-icons cursor-pointer">accessibility</span>
       </div>
     </div>
   `
