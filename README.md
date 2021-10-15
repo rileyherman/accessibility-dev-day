@@ -1,6 +1,6 @@
 # AccessibilityDevDay
 
-## Exercise 1 - Don't be stupid and why should you care?
+### Exercise 1 - Don't be stupid and why should you care?
 
 Let's start with a definition: according to [MDN](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility), ``Accessibility is the practice of making your websites usable by as many people as possible.''
 
@@ -12,4 +12,19 @@ Building accessibility friendly sites isn't just for people living with declared
 
 If that's not convincing and you still want to be a jerk, accessibility is also enforced by law in some juristictions. For example, the [Harmonised European standard](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf) is compliance to WCAG 2.1 to Level AA ([which is quite a long read](https://www.w3.org/TR/WCAG21/) but luckily there's a [summary](https://www.w3.org/WAI/standards-guidelines/wcag/glance/)). Germany has an even stricter [standard](https://www.einfach-fuer-alle.de/artikel/bitv_english/). In Canada this is governed by the [Canadian Human Rights Act](https://laws-lois.justice.gc.ca/eng/acts/h-6/FullText.html) for the public and private sector and the [Policy on Communications and Federal Identity](https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683) which is based on [WCAG 2.0](https://www.w3.org/TR/WCAG20/) for government websites. Will the feds come knocking on your door because you forgot alt text on an image for your Sailor Moon fanfic site? No. But if you were making the governemnt of Canada's official Sailor Moon fanfic site they could be. Do you want to be under that headline? Didn't think so. EDIT THIS LATER.
 
+There are 7 chapters in this workshop. Welcome to the first one! It's not just me rambling about documentation; you will get to touch some code in a second. First, let me give you a quick tour of the app. 
+
 \* an amalgamation of the data linked and [this](https://www.bls.gov/emp/tables/emp-by-detailed-occupation.htm)
+
+### The App
+
+Here's the problem: I watch a lot of soccer in other timezones, which means I watch a lot of replays of games. The game has already happened; I have restrained from checking the score, but then a thought hits - what if my team got obliterated? I don't want to watch that. Then again, if I look at the score to see whether my team got played out of the park, I've spoiled the game. Solution: this site just _lightly_ spoils the game - if my team lost by 2 or more goals, I get an indication to not watch that game. Otherwise, I should watch it. I don't know whether my team won, drew, or lost a closer game so the mystery is still there, but I do know I won't watch my team pull a [Brazil in the 2014 World Cup](https://youtu.be/aE4BdIP6bvc).
+
+The site gets its data from the .json files in the src/app/data folder. If you're curious, that comes from the populate-data.sh file but I put the results of that script in that folder so no one else needs to register for an API key. You can easily switch this from premier league to any league from the documentation if you so choose. Documentation for the API I'm using can be found [here](https://rapidapi.com/api-sports/api/API-FOOTBALL). 
+
+It's an Angular 11 PWA using TailwindCSS. It's NPM so a simple `npm install` should be enough to get you going. There are a few useful commands (all can be found in the package.json): 
+
+* `npm run lint`: linter using tslint.json. I know, I know, use eslint. I was lazy.
+* `npm run dev`: start in development mode. This does all the nifty reloading and stuff for when you're actually writing code. http://localhost:4200/
+* `npm run start`: start in production mode (but, you know, locally). Purges all the extra styles; doesn't restart on changes, that kind of thing. If you want to run reports of any kind, use this as it better mimics what's going on when it's actually deployed somewhere. http://localhost:4202/
+* `npm run deploy`: packages everything up and deploys to github pages. It's a PWA so it should work on mobile - this is one way to be able to interact with the site on you cell phone. For me the url would be https://rileyherman.github.io/accessibility-dev-day/ but it depends on your github username. 
