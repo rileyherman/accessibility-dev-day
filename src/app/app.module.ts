@@ -12,7 +12,6 @@ import { TeamComponent } from './components/team/team.component';
 import { FixtureComponent } from './components/fixture/fixture.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AccessibilityPageComponent } from './routes/accessibility-page/accessibility-page.component';
 import { AboutPageComponent } from './routes/about-page/about-page.component';
 import { ContentComponent } from './components/content/content.component';
 
@@ -24,7 +23,6 @@ import { ContentComponent } from './components/content/content.component';
     TeamPageComponent,
     TeamComponent,
     FixtureComponent,
-    AccessibilityPageComponent,
     AboutPageComponent,
     ContentComponent,
   ],
