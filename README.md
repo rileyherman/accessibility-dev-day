@@ -5,10 +5,9 @@
 * [Exercise 1 - Don't be stupid and why should you care?](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-1)
 * [Exercise 2 - Do the things we all know we should](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-2)
 * [Exercise 3 - To the Lighthouse](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-3)
-* [Exercise 4 - Colour me timbers](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-4)
-* [Exercise 5 - The eye of man hath not heard](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-5)
-* [Exercise 6 - I think U2 wrote a song about this once](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-6)
-* [Exercise 7 - Now that you've heard it from me, don't take it from me](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-7)
+* [Exercise 4 - The eye of man hath not heard](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-4)
+* [Exercise 5 - I think U2 wrote a song about this once](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-5)
+* [Exercise 6 - Now that you've heard it from me, don't take it from me](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-6)
 
 ### The App
 
