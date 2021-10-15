@@ -16,9 +16,12 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   // You're developers - I don't need to explain to you why this is a dumb piece of code. 
   // BUT I do want you to run Lighthouse with this still here and see if it gets detected. 
   // (Note that if you haven't done Task 1, that will be detected by Lighthouse - it's not
-  // garbage, it just doesn't stop you from being a moron)
+  // garbage, it just doesn't stop you from being a moron). When you see the next task 
+  // remember that that didn't show up either.
 
   // You know what to do. Log a Github Issue of course! Everyone reads those, right? ... right?
+
+  // I stole this from https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/
   
   // Next task in ./styles.css
   document.addEventListener('keydown', function (e) {

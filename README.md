@@ -1,3 +1,5 @@
 # AccessibilityDevDay
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+## Exercise 1 - Don't be stupid and why should you care?
+
+Let's start with a definition: according to 
