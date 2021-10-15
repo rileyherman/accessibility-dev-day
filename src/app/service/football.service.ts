@@ -24,12 +24,12 @@ export class FootballService {
             home: {
               team: fixture.teams.home,
               goals: fixture.goals.home,
-              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, +fixture.teams.home.id === teamId),
+              mood: getMoodForTeam(fixture.goals.home, fixture.teams.home.id, fixture.goals.away, fixture.teams.away.id, teamId),
             } as FixtureTeam,
             away: {
               team: fixture.teams.away,
               goals: fixture.goals.away,
-              mood: getMoodForGoals(fixture.goals.home, fixture.goals.away, +fixture.teams.away.id === teamId),
+              mood: getMoodForTeam(fixture.goals.home, fixture.teams.home.id, fixture.goals.away, fixture.teams.away.id, teamId),
             } as FixtureTeam,
             date: new Date(fixture.fixture.date),
           } as Fixture)))
@@ -61,10 +61,17 @@ export class FootballService {
   }
 }
 
-function getMoodForGoals(homeGoals: number, awayGoals: number, cheeringForHome: boolean): Mood {
-  const cheeringForGoals = cheeringForHome ? homeGoals : awayGoals;
-  const cheeringAgainstGoals = cheeringForHome ? awayGoals : homeGoals;
+function getMoodForTeam(homeGoals: number, homeTeamId: number, awayGoals: number, awayTeamId: number, teamId: number): Mood {
+  if (teamId === homeTeamId) {
+    return getMood(homeGoals, awayGoals);
+  }
+  if (teamId === awayTeamId) {
+    return getMood(awayGoals, homeGoals);
+  }
+  throw new Error("illegal argument: no matching team for id " + teamId);
+}
 
+function getMood(cheeringForGoals: number, cheeringAgainstGoals: number): Mood {
   if (cheeringForGoals - cheeringAgainstGoals > -2) {
     return Mood.HAPPY;
   }
