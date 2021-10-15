@@ -4,7 +4,7 @@ import { Fixture, Mood } from 'src/app/model';
 @Component({
   selector: 'app-fixture',
   template: `
-  <div [class.ring-green-300]="happy" [class.ring-yellow-300]="close" [class.ring-red-300]="sad" class="border shadow p-2 ring-2">
+  <div [class.ring-green-300]="happy" [class.ring-red-300]="sad" class="border shadow p-2 ring-2">
     <div class="flex items-center mb-2">
       <app-team class="mr-4" [team]="fixture.away.team"></app-team>
       <div class="mr-4 text-lg text-gray-900">VS</div>
@@ -21,10 +21,6 @@ export class FixtureComponent {
 
   get happy(): boolean {
     return this.mood === Mood.HAPPY;
-  }
-
-  get close(): boolean {
-    return this.mood === Mood.CLOSE;
   }
 
   get sad(): boolean {

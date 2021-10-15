@@ -65,10 +65,8 @@ function getMoodForGoals(homeGoals: number, awayGoals: number, cheeringForHome: 
   const cheeringForGoals = cheeringForHome ? homeGoals : awayGoals;
   const cheeringAgainstGoals = cheeringForHome ? awayGoals : homeGoals;
 
-  if (cheeringForGoals - cheeringAgainstGoals >= 2) {
+  if (cheeringForGoals - cheeringAgainstGoals > -2) {
     return Mood.HAPPY;
-  } else if (cheeringForGoals - cheeringAgainstGoals < 2 && cheeringForGoals - cheeringAgainstGoals > -2) {
-    return Mood.CLOSE;
   }
   return Mood.SAD;
 }
