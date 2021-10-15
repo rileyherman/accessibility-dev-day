@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-content',
   template: `
   <!-- Task 1 - Aria-l bold
-    ARIA elements are 
+
     Why would you do this?
     For accessibility reasons, of course!
     aria-hidden removes elements from the accessibility tree that are extraneous or irrelevant. 
@@ -12,11 +12,12 @@ import { Component } from '@angular/core';
     is not a good idea.
 
     The general advice is to use HTML5 attributes with built in aria elements. I know we all just 
-    use <div> for everything
+    use <div> for everything and I'm not asking that to change. 
 
-    Remove the offending attribute, please!
+    We'll come back around to the accessibility tree, but for now just remove the offending attribute
+    and move on to the next task.
 
-    Reference: 
+    References on ARIA 
     https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
     https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets
     https://w3c.github.io/using-aria/
