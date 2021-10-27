@@ -24,4 +24,4 @@ Robust
 
 For more in depth notes about all of this, you can consult [this](https://www.w3.org/WAI/fundamentals/accessibility-principles).
 
-We'll begin the tasks with `alt` text in the [team component](./src/app/components/team/team.component.ts)
+We'll begin the tasks with a quick little form in the [home page component](./src/app/routes/home-page/home-page.component.html)

@@ -3,23 +3,19 @@
     <div class="grid grid-cols-1 gap-4">
         <div class="flex items-center justify-center">
             <!-- 
-                Task 2 - Form is where the heart is
+                Task 1 - Form is where the heart is
 
                 The best way for a form to be accessible is to use native html inputs. We're doing that here, but the
                 only indication of what the input is for is its location. Adding a label using just some text or a span
                 would fix this, but the text would not have any association with its input. The better solution from
                 an accessibility standpoint is a <label> with a matching for attribute. It should be meaningful
-                as context can be lost by accessibility devices easily. 
-
-                Providing adequate context is also important for link text. Screen readers usually have a feature where
-                they bring up a list of every link on the page - thus removing the context. Text like "click me" can be
-                very frustrating in this scenario.
+                as context can be lost by accessibility devices easily, and especially so for screen readers.
 
                 Aside - another thing to consider with inputs is use of colour. If a red outline is the only indication 
                 that somethig is awry, someone who cannot see it will be confused. This is often why you see asterisks 
                 or subtext on form inputs. 
 
-                Once you have your label, move on to the next task in src/app/routes/team-page/team-page.component.html
+                Once you have your label, move on to the next task in src/app/app.component.ts
             -->
             <input class="p-2 border rounded w-64 text-sm focus:ring-2" type="text" [formControl]="searchFormControl" />
         </div>
