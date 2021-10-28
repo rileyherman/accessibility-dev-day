@@ -6,8 +6,7 @@ import { FootballService } from 'src/app/service/football.service';
 
 @Component({
   selector: 'app-team-page',
-  templateUrl: './team-page.component.html',
-  styleUrls: ['team-page.component.css']
+  templateUrl: './team-page.component.html'
 })
 export class TeamPageComponent implements OnInit {
 

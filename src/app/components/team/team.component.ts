@@ -45,6 +45,17 @@ import { Team } from 'src/app/model';
       still a div, so it won't even show up on the list of links at this time. Further, it's an image without 
       alt text (yet). 
 
+      According to Yale's Usability & Web Accessibility Evaluation 
+      (https://usability.yale.edu/web-accessibility/articles/links#image-links),
+      <blockquote>
+        In general, content editors should avoid using images as links. If an image functions as a link, the 
+        image must have alt text that conveys the location and purpose of the link. The alt text should not 
+        describe the image. Treat image links as links, not as images.
+      </blockquote>
+
+      So here's your task: fix this. Specifically: the improper use of a <div> for a link, the <img> link 
+      (either make it not an image link or provide a better image link), and the sub task about alt text.
+
       Reference https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
 
       Bonus task https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility
