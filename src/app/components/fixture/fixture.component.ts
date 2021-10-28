@@ -20,7 +20,6 @@ import { Fixture, Mood } from 'src/app/model';
       <app-team [team]="fixture.away.team"></app-team>
     </div>
     <div class="text-sm text-gray-700 text-center">{{date}}</div>
-    <div class="text-sm text-gray-700 text-center">{{fixture.home.goals}} - {{fixture.away.goals}}</div>
   </div>
   `
 })
