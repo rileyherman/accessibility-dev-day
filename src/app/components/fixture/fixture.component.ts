@@ -4,7 +4,16 @@ import { Fixture, Mood } from 'src/app/model';
 @Component({
   selector: 'app-fixture',
   template: `
-  <div [class.ring-green-300]="happy" [class.ring-red-300]="sad" class="border shadow p-2 ring-2">
+  <!-- 
+    Task 4 - Colour me timbers
+
+    I'll cut to the chase on this one - don't use only colour to convey meaning. If someone can't see
+    well, they won't get the meaning. It's as simple as that. In this task, the ring on the card conveys
+    whether you should watch the match. 
+
+    
+  -->
+  <div [class.ring-green-100]="happy" [class.ring-red-100]="sad" class="border shadow p-2 ring-2">
     <div class="flex items-center mb-2">
       <app-team class="mr-4" [team]="fixture.home.team"></app-team>
       <div class="mr-4 text-lg text-gray-900">VS</div>

@@ -89,7 +89,7 @@ import { Team } from 'src/app/model';
         Something like this would be good for a site which uses images from users - for example, social media.
         https://codepen.io/sdras/details/jawPGa
 
-        Now that we have some alt text, let's move on to showing and hiding content. See you in src/app/routes/team-page/team-page.component.html
+        Now that we have some alt text, let's move on to colour. See you in src/app/components/fixture/fixture.component.ts
       -->
       <img width="150" height="150" alt="" [src]="logo" />
     </div>
