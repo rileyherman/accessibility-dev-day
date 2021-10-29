@@ -12,14 +12,15 @@ import { Fixture, Mood } from 'src/app/model';
     whether you should watch the match. Add another indication in an accessible way.
 
     If we talk about colour, we need to talk about contrast. Not only is the colour the only thing 
-    conveying meaning, but it's not an obvious colour contrast to make it usable for the low sighted. 
+    conveying meaning, but the green-100 is not an obvious colour contrast to make it usable for the 
+    low sighted. 
 
     My personal favourite for checking colour contrast is https://snook.ca/technical/colour_contrast/colour.html#fg=FFFFFF,bg=000000
     Tailwind colour #s can be found here https://tailwindcss.com/docs/customizing-colors
 
     You'll notice that the checker tells you whether you are WCAG 2 AA Compliant, etc. This is a 
     standard based on contrast ratio (if you want to learn more about how this is calculated
-    https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast): 
+    https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast);
     AA is the standard that most organizations adhere to as AAA is more difficult to make pretty. For
     what it's worth, the Canadian government regulation for their websites is AA. Since bigger text is
     easier to see, the contrast ratio is less for 18pt+ text. 
@@ -29,7 +30,7 @@ import { Fixture, Mood } from 'src/app/model';
     Tailwind colours are very good at complying at the AA level: a red-100 on gray-100 background, 
     for example, is compliant. While the ring is not necessarily text, it is conveying meaning so
     in my opinion it should be compliant. Also when you add another indication, please make that AA
-    compliant. 
+    colour compliant. 
 
     Talking about colour necessitates talking about text. We'll do that over in 
     src/app/routes/about-page/about-page.component.html

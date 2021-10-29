@@ -22,8 +22,8 @@ import { Component } from '@angular/core';
         from the accessibility tree. Consequently, they also mean the content cannot be focused, 
         which makes it poor for this usage. 
       - Anything with a size of zero will not be read by a screen reader (for example) width: 0px.
-        Something like line-height: 0px may or may not work - don't risk it.
-      - text-indent: -10000px probably works, but it's definitely not the recommended way. 
+      - Something like line-height: 0px may or may not work - don't risk it.
+      - text-indent: -10000px probably works, but it's definitely not the best way. 
 
       The recommended way is in the styles. Once you've added your skipnav, you can move onto the 
       next task in src/app/components/team/team.component.ts
