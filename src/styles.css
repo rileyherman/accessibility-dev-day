@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Task 3.a - Make like OJ and focus
-    Many users only use the keyboard to navigate your site. They often use visual cues such as 
-    the outline that happens when you focus an element. This doesn't mean they can't use the 
-    input, it just means that they will have a more frustrating experience because they won't 
-    know what is focused. 
+/* Task 3a - Make like OJ and focus
+    Many users use the keyboard to navigate your site. They often use visual cues such as the
+    outline that happens when you focus an element. This doesn't mean they can't use the input,
+    it just means that they will have a more frustrating experience because they won't know
+    what is focused. 
 
     Many users with motor disibilities use only the keyboard. This can include tremors or other
     obstacles to fine motor control. It's also generally easier for a blind person to use just a 
     keyboard. I personally prefer to use the keyboard so this would be an issue for me as well 
-    just by habit.
+    just by force of habit.
 
     Learn more at https://webaim.org/techniques/keyboard/ (and yes, I stole these from the article 
     linked in the previous exercise as well)
@@ -26,7 +26,8 @@ input:focus {
     Reducing the font size on the body component not only affects every component without a specified
     font size, it affects reader mode as well. Reader mode can be enabled in Chrome using 
     chrome://flags/#enable-reader-mode. This could be disabled for a variety of reasons, but this is 
-    probably one of the most efficient.
+    probably one of the most efficient. Note that this alone won't allow you to use reader mode. Also
+    note that it's called "reader view" in Firefox and is enabled by default. 
 
     Reader mode is one of my favourite things for researching on the web. It removes all the stupid
     clutter of advertisements and other content from the actual body of the article or site. It 
@@ -36,10 +37,9 @@ input:focus {
 
     Expunge! You should be able to use the site just like you could on the main branch. 
 
-    Thanks for finishing exercise 1! Any feedback can be sent to Riley through whatever means you have.
-    Next tasks are in the exercise-2 branch.
+    Thanks for finishing exercise 1! Next tasks are in the exercise-2 branch.
 */
 body {
-    pointer-events: none; /* for 3.b */
+    pointer-events: none; /* For 3.a, except this disables the mouse. */
     font-size: 1px;
 }

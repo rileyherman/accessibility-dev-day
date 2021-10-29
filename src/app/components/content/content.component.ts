@@ -17,12 +17,15 @@ import { Component } from '@angular/core';
     We'll come back around to the accessibility tree, but for now just remove the offending attribute
     and move on to the next task.
 
-    References on ARIA 
+    If you'd like to learn more about aria attributes, here are some references: 
     https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
     https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets
     https://w3c.github.io/using-aria/
 
-    Next task in ../../../main.ts
+    Frankly, the best way to avoid having to mess with aria attributes is to use semantic HTML. 
+    You'll see that motif frequently over the course of the workshop. 
+
+    Next task in src/main.ts
    -->
     <div class="grid grid-cols-6 p-8" aria-hidden="true">
       <div class="col-start-2 col-span-4">
