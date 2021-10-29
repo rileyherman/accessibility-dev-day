@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-content',
   template: `
-  <!-- Task 1 - Aria-l bold
+  <!-- 
+    Task 1 - Aria-l bold
 
     Why would you do this?
     For accessibility reasons, of course!
