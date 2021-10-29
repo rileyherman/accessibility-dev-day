@@ -10,7 +10,7 @@ to github pages (`npm run deploy`), that would be the most accurate. If you don'
 
 #### Chrome - Lighthouse
 In the first exercise, I asked you to run a Lighthouse test in Chrome Dev Tools. [Lighthouse](https://developers.google.com/web/tools/lighthouse/) checks [these things](https://web.dev/accessibility-scoring/). It will catch things like 
-* aria-* attributes are ok
+* `aria-*` attributes are ok
 * `<title>`s (including having no `<title>` on `<iframe>`s)
 * `alt` text on `<img>` tags
 * form fields have unique labels
@@ -21,7 +21,7 @@ Try running it on this site and see what you get! Fix the broken things. You onl
 feel free to play with the others if you feel inspired. Live your life. 
 
 Chrome also has some accessibility settings in the Elements tab. In the overflow menu double chevron, there's an Accessibility tab. This allows you to 
-view the Accessibility tree and any aria-* attributes, including computed ones. 
+view the Accessibility tree and any `aria-*` attributes, including computed ones. 
 
 #### Firefox - Accessibility Tab
 
@@ -40,7 +40,7 @@ Both of these tools miss a few things that should not be particularly difficult 
 
 However, lots can not be easily programmably checked or can be red herrings. Some common examples include
 * using only colour to convey meaning,
-* `alt` text on purely decorative images,
+* `alt` text should not exist on purely decorative images,
 * missing skipnav, etc.
 
 There area few tools that can help you track down stinkers. I personally like [Web Developer](https://chrispederick.com/work/web-developer/) which is very similar to Dev Tools except
@@ -51,8 +51,8 @@ Web AIM is generally an excellent resource for this kind of thing and WAVE will 
 Finally, [here's a great list of tools by Harvard Accessibility](https://accessibility.huit.harvard.edu/tools). Some of my favourites from this list are:
 * [A tool for checking the accessibility of surveys](https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/check-survey-accessibility/#AccessibleAndNonAccessibleQuestionTypes)
 * [A photosensitive epilepsy analysis tool](https://trace.umd.edu/peat/)
-* [The W3C HTML checker](https://validator.w3.org/nu/) (you can check this site - my one complaint is that it doesn't detech `<div>` soup so this site does alright)
+* [The W3C HTML checker](https://validator.w3.org/nu/) (you can check this site - my one complaint is that it doesn't detect `<div>` soup so this site does alright)
 * [A PDF accessibility checker](https://www.access-for-all.ch/en/pdf-accessibility-checker.html)
 * [Tanaguru, for corporate training and advice on accessibility](https://www.tanaguru.com/en/)
 
-If you want to do a manual, guided review of your website then I would highly suggest walking through with (this review from W3](https://www.w3.org/WAI/test-evaluate/preliminary/). 
+If you want to do a manual, guided review of your website then I would highly suggest walking through with [this review from W3](https://www.w3.org/WAI/test-evaluate/preliminary/). 
