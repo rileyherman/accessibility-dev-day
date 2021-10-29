@@ -28,9 +28,9 @@ import { Component } from '@angular/core';
     Next task in src/main.ts
    -->
     <div class="grid grid-cols-6 p-8" aria-hidden="true">
-      <div class="col-start-2 col-span-4">
+      <main class="col-start-2 col-span-4">
         <ng-content></ng-content>
-      </div>
+      </main>
     </div>
   `,
 })
