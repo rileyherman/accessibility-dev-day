@@ -54,3 +54,5 @@ Finally, (here's a great list of tools by Harvard Accessibility)[https://accessi
 * (The W3C HTML checker)[https://validator.w3.org/nu/] (you can check this site - my one complaint is that it doesn't detech `<div>` soup so this site does alright)
 * (A PDF accessibility checker)[https://www.access-for-all.ch/en/pdf-accessibility-checker.html]
 * (Tanaguru, for corporate training and advice on accessibility)[https://www.tanaguru.com/en/]
+
+If you want to do a manual, guided review of your website then I would highly suggest walking through with (this review from W3)[https://www.w3.org/WAI/test-evaluate/preliminary/]. Spoiler alert - I stole a lot of content from here. 
