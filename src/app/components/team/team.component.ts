@@ -6,7 +6,7 @@ import { Team } from 'src/app/model';
   template: `
 
     <!-- 
-      Task 3a - For the last time, his name is Zel... er, I mean Link
+      Task 4a - For the last time, his name is Zel... er, I mean Link
 
       We all fucking love <div>s. <div>s are great. But I think you know where I'm going with this. Full dis-
       closure: I'm not going to scold you for using <div>s for everything in the future. I just want you to 
@@ -62,7 +62,7 @@ import { Team } from 'src/app/model';
     -->
     <div (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <!-- 
-        Task 3b - Hey now; you're an alt star
+        Task 4b - Hey now; you're an alt star
 
         Here we're displaying a team's logo. Currently the alt text is blank - I want you to write it. 
         Hint: the team name is team.name - to use it you'll need to bind the alt attribute.

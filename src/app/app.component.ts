@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <!-- 
-      Task 2 - Skip to my lou
+      Task 3 - Skip to my lou
 
       Have you ever tried just using your keyboard on a site and had to tab through the header
       on every page? It's very annoying. One simple trick to help keyboard users is a skipnav. 
