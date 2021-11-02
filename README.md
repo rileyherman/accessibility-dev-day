@@ -21,6 +21,11 @@ Since it's at the operating system level, VoiceOver is not limited to websites. 
 use it exclusively with browser. To enable, press Cmd+F5. Chances are you haven't enabled this before, so you'll
 likely get a tutorial pop-up. I recommend you go through this tutorial. 
 
+#### NVDA
+
+I won't go over this one in detail, but just for the completeness of a Windows option I'll direct you to [the NVDA website](https://www.nvaccess.org/).
+You'll need to download and install this one. 
+
 #### ChromeVox
 
 I started writing a tutorial but honestly [this one was better](https://youtu.be/fpbIsN31hLM). Another handy link
@@ -32,7 +37,7 @@ There are two tasks in this exercise:
 * Firstly, familiarize yourself with a screen reader. Once you're comfortable, try uising it on some of the sites you
 regularly go to. 
 * Next, use it on this site. You'll notice that there are a few things that are hard if not impossible to do. Use what 
-you learned in the previous sections (and do some searching of your own!) to make it friendlier for the screen reader
+you learned in the previous sections (and do some searching of your own!) to make it friendlier for the screen reader.
 
 
 Reference https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#screenreaders
