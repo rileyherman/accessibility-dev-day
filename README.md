@@ -6,7 +6,9 @@ Ultimately, the tools discussed in the last exercise aren't as good as having pe
 way people interact with the site. That's what this exercise is about - we're going to use a screen reader.
 
 There are a few good options for screen readers depending on how you access the web. Some common free ones include
-* NVDA (Windows only)
+* NVDA (Windows only; third party software)
+* JAWS (Windows only; EXPENSIVE third party software)
+* Narrator (installed by default on Windows)
 * ChromeVox (for Chrome; installed by default on Chromebooks)
 * Orca (Linux)
 * TalkBack (installed by default on Android devices)
@@ -15,21 +17,35 @@ There are a few good options for screen readers depending on how you access the 
 Note: the screen reader reads the screen aloud. Please make sure your volume is audible and, if circumstances
 require, you to wear headphones. 
 
-#### VoiceOver on Mac
+I won't go into detail myself as I'm probably not the best person to instruct you on these things. For a select
+few of these screen readers, I'll direct you to their tutorials. I found them pretty good.
 
-Since it's at the operating system level, VoiceOver is not limited to websites. However, for this workshop we'll
-use it exclusively with browser. To enable, press Cmd+F5. Chances are you haven't enabled this before, so you'll
-likely get a tutorial pop-up. I recommend you go through this tutorial. 
+#### VoiceOver
+
+Like anything at the operating system level, VoiceOver is not limited to websites. To enable, press Cmd+F5. Chances 
+are you haven't enabled this before, so you'll likely get a tutorial pop-up. I recommend you go through this tutorial. 
+Just so you know, Cmd+F5 also turns it off.
 
 #### NVDA
 
-I won't go over this one in detail, but just for the completeness of a Windows option I'll direct you to [the NVDA website](https://www.nvaccess.org/).
-You'll need to download and install this one. 
+Just for transparency, I don't have a Windows computer so I didn't try this nor the next one. I'll just direct you 
+to [the NVDA website](https://www.nvaccess.org/). You'll need to download and install this one. 
+
+#### Narrator
+
+Narrator is the built in screen reader for Windows. Apparently it was horrible but is now seemingly actually usable. 
+Again, I'll direct you to [their guide](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)
 
 #### ChromeVox
 
-I started writing a tutorial but honestly [this one was better](https://youtu.be/fpbIsN31hLM). Another handy link
-is (this list of shortcuts)[https://docs.google.com/document/d/13OY6SbnnD3TeMXf_luSA1vQVHQA150Azizbh140XIMQ/pub]
+ChromeVox documentation isn't particularly fantastic so I started writing a tutorial but then I found that 
+[this one was better](https://youtu.be/fpbIsN31hLM). Another handy link is [this list of shortcuts](https://docs.google.com/document/d/13OY6SbnnD3TeMXf_luSA1vQVHQA150Azizbh140XIMQ/pub)
+
+#### Orca
+
+Orca has a built in tutorial much like VoiceOver. You can find out how to get started with that [here](https://www.a11yproject.com/posts/2021-09-03-getting-started-with-orca/). 
+Another good resource if you're stuck is [this](https://help.ubuntu.com/community/Accessibility). It's installed by 
+default on anything with the GNOME desktop. 
 
 #### Tasks 
 
