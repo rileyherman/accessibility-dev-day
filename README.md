@@ -18,7 +18,9 @@ Note: the screen reader reads the screen aloud. Please make sure your volume is 
 require, you to wear headphones. 
 
 I won't go into detail myself as I'm probably not the best person to instruct you on these things. For a select
-few of these screen readers, I'll direct you to their tutorials. I found them pretty good.
+few of these screen readers, I'll direct you to their tutorials. I found them pretty good. 
+
+It's hard to navigate a computer in a totally different way so try to be patient with yourself and don't give up!
 
 #### VoiceOver
 
