@@ -6,7 +6,7 @@ import { Team } from 'src/app/model';
   template: `
 
     <!-- 
-      Task 4a - For the last time, his name is Zel... er, I mean Link
+      Task 4a - For the last time, their name is Zel... er, I mean Link
 
       The moment you've all been waiting for - semantic HTML.
 
@@ -30,16 +30,21 @@ import { Team } from 'src/app/model';
         that has content to jump around in, which is a little extreme in my opinion.
       - I know it's not 1998 but for goodness' sake do NOT use a <table> for layouts. A screen reader would 
         read it as a table for data and it would be borderline unusable for that user.
-      - If you really need to use a <div> in place of a more semantic tag (for example, some implementations 
-        of a resizable <textarea>), include a tabindex attribute. tabindex="0" allows a non-tabbable element
-        to be tabbed into (ie focused). You will also need to handle keyboard inputs (for example, adding an
-        event listener to call the onClick() when the Enter key is pressed on a fake button)
       - Consider including a <caption> or a summary attribute on <table>s that summarize the table's contents
         or a <figcaption> for an <img>
       - Don't use an <a> tag when you mean a <button>. If you're tempted to put an href="#" or href="javascript:void(0)"
         on your <a>, you should reconsider.
       - Links that open in a new tab should indicate that they do so. This can be a jarring experience, 
         especially for people with low vision or cognitive concerns
+
+      If you really need to use a <div> in place of a more semantic tag (for example, some implementations 
+      of a resizable <textarea>), here are some things you can do to mimic the built in features:
+      - include a tabindex attribute, tabindex="0" allows a non-tabbable element
+        to be tabbed into (ie focused). You will also need to handle keyboard inputs (for example, adding an
+        event listener to call the onClick() when the Enter key is pressed on a fake button)
+      - include an ARIA attribute. In Angular, this usually means binding to the ARIA attributes you need.
+        See here for an example: https://angular.io/guide/accessibility#case-study-building-a-custom-progress-bar
+        and here for a more in-depth look at ARIA https://developers.google.com/web/fundamentals/accessibility/semantics-aria
 
       Tangentially realted to this is links and link text. Providing adequate context is very important for 
       link text. Screen readers usually have a feature where they bring up a list of every link on the page - 

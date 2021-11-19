@@ -32,6 +32,13 @@ import { Fixture, Mood } from 'src/app/model';
     in my opinion it should be compliant. Also when you add another indication, please make that AA
     colour compliant. 
 
+    One more thing with colours - a significant chunk of the population has some vision disabilities.
+    If you aren't, it's tough to know what those users see when they look at your app. There are a few
+    ways to get this but my favourite is the Chrome plugin Funkify (https://www.funkify.org). Funkify 
+    let's you impersonate users with different visual abilities and disabilities easily. I highly 
+    recommend you check your colours with people with colour blindnesses as well as checking your text
+    (in the next exercise). 
+
     Talking about colour necessitates talking about text. We'll do that over in 
     src/app/routes/about-page/about-page.component.html
   -->

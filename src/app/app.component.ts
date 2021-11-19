@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
     <!-- 
       Task 3 - Skip to my lou
 
-      Have you ever tried just using your keyboard on a site and had to tab through the header
-      on every page? It's very annoying. One simple trick to help keyboard users is a skipnav. 
+      Have you ever tried just using your keyboard on a site and had to tab through every link 
+      in the header on every page? It's very annoying. One simple trick to help keyboard users 
+      is a skipnav. 
+      
       A skipnav is just a link to the main content. If you look in the content component 
       (src/app/components/content/content.component.ts), you'll notice that there's a 
       <main id="maincontent"> surrounding the body of every page. We can allow a user to skip 
@@ -18,15 +20,15 @@ import { Component } from '@angular/core';
       focused. You're all clever developers - there are 1000 ways to hide something using CSS.
       
       Here are a few DON'Ts when it comes to hiding content:
-      - The hidden HTML attribute, display: none, and visibility: hidden all remove the content 
+      - The "hidden" HTML attribute, "display: none", and "visibility: hidden" all remove the content 
         from the accessibility tree. Consequently, they also mean the content cannot be focused, 
         which makes it poor for this usage. 
-      - Anything with a size of zero will not be read by a screen reader (for example) width: 0px.
+      - Anything with a size of zero will not be read by a screen reader. For example, "width: 0px".
       - Something like line-height: 0px may or may not work - don't risk it.
       - text-indent: -10000px probably works, but it's definitely not the best way. 
 
-      The recommended way is in the styles. Once you've added your skipnav, you can move onto the 
-      next task in src/app/components/team/team.component.ts
+      The recommended way is the one I've used in the styles. Once you've added your skipnav, 
+      you can move onto the next task in src/app/components/team/team.component.ts
 
       Reference https://webaim.org/techniques/skipnav/; https://webaim.org/techniques/css/invisiblecontent/
     -->
