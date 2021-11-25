@@ -67,7 +67,7 @@ import { Team } from 'src/app/model';
 
       Bonus task https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility
     -->
-    <figure (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
+    <figure tabindex="0" (keyup.enter)="handleClick()" (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <!-- 
         Task 4b - Hey now; you're an alt star
 
