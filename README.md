@@ -2,7 +2,7 @@
 
 ### Exercise 2 - Do the things we all know we should
 
-Whenever you look up accessibility on the web, you tend to see a lot of the same recommendations. We'll briefly cover those here. 
+Whenever you look up accessibility on the web, you tend to see a lot of the same recommendations. We'll cover those here. 
 
 Firstly, because standards are nothing if not described in acronyms, an accessible site follows the POUR model: it is
 
