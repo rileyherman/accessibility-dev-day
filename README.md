@@ -5,7 +5,7 @@
 Ultimately, the tools discussed in the last exercise aren't as good as having people interact with the site the 
 way people interact with the site. That's what this exercise is about - we're going to use a screen reader.
 
-There are a few good options for screen readers depending on how you access the web. Some common free ones include
+There are a few good options for screen readers depending on how you access the web. Some common ones include
 * NVDA (Windows only; third party software)
 * JAWS (Windows only; EXPENSIVE third party software)
 * Narrator (installed by default on Windows)
@@ -22,7 +22,7 @@ few of these screen readers, I'll direct you to their tutorials. I found them pr
 
 It's hard to navigate a computer in a totally different way so try to be patient with yourself and don't give up!
 
-#### VoiceOver
+#### VoiceOver (Mac/iOS)
 
 Like anything at the operating system level, VoiceOver is not limited to websites. To enable, press Cmd+F5. Chances 
 are you haven't enabled this before, so you'll likely get a tutorial pop-up. I recommend you go through this tutorial. 
@@ -30,7 +30,7 @@ Just so you know, Cmd+F5 also turns it off.
 
 #### NVDA
 
-Just for transparency, I don't have a Windows computer so I didn't try this nor the next one. I'll just direct you 
+I don't have a Windows computer so I didn't try this nor the next one. I'll just direct you 
 to [the NVDA website](https://www.nvaccess.org/). You'll need to download and install this one. 
 
 #### Narrator
