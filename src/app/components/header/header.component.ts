@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
         <button class="cursor-pointer mr-4" (click)="about()">About</button>
       </nav>
       <nav class="flex items-center xl:hidden">
-        <button tabindex="0" (click)="about()"><span class="material-icons cursor-pointer mr-4">help_outline</span></button>   
+        <button (click)="about()"><span class="material-icons cursor-pointer mr-4">help_outline</span></button>   
       </nav>
     </header>
   `
