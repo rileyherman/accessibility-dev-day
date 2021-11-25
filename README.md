@@ -28,22 +28,22 @@ Like anything at the operating system level, VoiceOver is not limited to website
 are you haven't enabled this before, so you'll likely get a tutorial pop-up. I recommend you go through this tutorial. 
 Just so you know, Cmd+F5 also turns it off.
 
-#### NVDA
+#### NVDA (Windows)
 
 I don't have a Windows computer so I didn't try this nor the next one. I'll just direct you 
 to [the NVDA website](https://www.nvaccess.org/). You'll need to download and install this one. 
 
-#### Narrator
+#### Narrator (Windows)
 
 Narrator is the built in screen reader for Windows. Apparently it was horrible but is now seemingly actually usable. 
 Again, I'll direct you to [their guide](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)
 
-#### ChromeVox
+#### ChromeVox (Chromebook)
 
-ChromeVox documentation isn't particularly fantastic so I started writing a tutorial but then I found that 
+ChromeVox documentation isn't particularly fantastic but I found this 
 [this one was better](https://youtu.be/fpbIsN31hLM). Another handy link is [this list of shortcuts](https://docs.google.com/document/d/13OY6SbnnD3TeMXf_luSA1vQVHQA150Azizbh140XIMQ/pub)
 
-#### Orca
+#### Orca (GNOME)
 
 Orca has a built in tutorial much like VoiceOver. You can find out how to get started with that [here](https://www.a11yproject.com/posts/2021-09-03-getting-started-with-orca/). 
 Another good resource if you're stuck is [this](https://help.ubuntu.com/community/Accessibility). It's installed by 
