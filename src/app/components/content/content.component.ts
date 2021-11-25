@@ -10,10 +10,14 @@ import { Component } from '@angular/core';
     For accessibility reasons, of course!
     aria-hidden removes elements from the accessibility tree that are extraneous or irrelevant. 
     Unfortunately, here we're removing the bulk of our site from the accessibility tree, which 
-    is not a good idea.
+    is not a good idea. Most accessibility tools run off the accessibility tree. If you are using 
+    Firefox, you can see the effects of this in dev tools -> Accessibility tab. In Chrome dev tools 
+    you can see the tree in the Elements tab -> double chevron in the right hand pane -> Accessibility. 
+    There's a header. 
+    And then there's nothing. 
 
     The general advice is to use HTML5 attributes with built in aria elements. I know we all just 
-    use <div> for everything and I'm not asking that to change. 
+    use <div> for everything and I'm not asking that to change (yet). 
 
     We'll come back around to the accessibility tree, but for now just remove the offending attribute
     and move on to the next task.
