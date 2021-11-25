@@ -1,4 +1,4 @@
-# AccessibilityDevDay
+# Accessibility Dev Day
 
 ### Exercise 3 - To the Lighthouse
 
