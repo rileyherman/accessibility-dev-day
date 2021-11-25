@@ -1,8 +1,8 @@
 <app-header [back]="back"></app-header>
 <app-content>
-    <div class="flex items-center flex-wrap">
+    <article class="flex items-center flex-wrap">
         <ng-container *ngFor="let fixture of fixtures">
             <app-fixture class="m-4" [fixture]="fixture" [mood]="getMoodForFixture(fixture)"></app-fixture>
         </ng-container>
-    </div>
+    </article>
 </app-content>

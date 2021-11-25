@@ -4,9 +4,9 @@ import { Team } from 'src/app/model';
 @Component({
   selector: 'app-team',
   template: `
-    <div (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
+    <figure (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <img width="150" height="150" [alt]="team.name" [src]="logo" />
-    </div>
+    </figure>
   `
 })
 export class TeamComponent {
