@@ -24,7 +24,7 @@ export class TeamPageComponent implements OnInit {
       map((params: Params) => +params.teamId),
       mergeMap((teamId: number) => this.footballService.getTeam(teamId)),
       tap((team: Team) => this.team = team),
-      tap(() => this.titleService.setTitle(`${this.team.name} - Accessibility Dev Day`)),
+      tap(() => this.titleService.setTitle(`Well I bet you came here to see the fixture for ${this.team.name} for this Accessibility Dev Day. Well here you go!`)),
       mergeMap(() => this.footballService.getFixturesByTeam(this.team.id))
     ).subscribe((f: Fixture[]) => this.fixtures = f.sort((a: Fixture, b: Fixture) => b.date.getTime() - a.date.getTime()));
   }

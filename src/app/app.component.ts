@@ -27,28 +27,15 @@ import { Component } from '@angular/core';
       - Something like line-height: 0px may or may not work - don't risk it.
       - text-indent: -10000px probably works, but it's definitely not the best way. 
 
-      The recommended way is the one I've used in the styles. Once you've added your skipnav, 
-      you can move onto the next task in src/app/components/team/team.component.ts
+      The recommended way is the one specified here https://webaim.org/techniques/css/invisiblecontent/. 
+      Once you've added your skipnav, you can move onto the next task in src/app/components/team/team.component.ts
 
       Reference https://webaim.org/techniques/skipnav/; https://webaim.org/techniques/css/invisiblecontent/
     -->
     <router-outlet></router-outlet>
   `,
   styles: [`
-    #skipnav a {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
- 
-    #skip a:focus {
-      position: static;
-      width: auto;
-      height: auto;
-    }
+    
   `]
 
 })

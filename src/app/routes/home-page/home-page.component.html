@@ -11,6 +11,11 @@
                 an accessibility standpoint is a <label> with a matching for attribute. It should be meaningful
                 as context can be lost by accessibility devices easily, and especially so for screen readers.
 
+                If you don't like the design of that, you can once again leverage aria to get a label. The attribute is
+                aria-label and will seem exactly the same as a regular label for a screen reader, but it won't show up 
+                visually. If you have a button (such as in a search bar), you can also use aria-labelledby with the id of 
+                the button and the screen reader will read the button text as the label.
+
                 Aside - another thing to consider with inputs is use of colour. If a red outline is the only indication 
                 that somethig is awry, someone who cannot see it will be confused. This is often why you see asterisks 
                 or subtext on form inputs. 

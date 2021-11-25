@@ -12,7 +12,7 @@ export class AboutPageComponent implements OnInit {
   constructor(private titleService: Title, private router: Router) { }
   
   ngOnInit(): void {
-    this.titleService.setTitle('About - Accessibility Dev Day');
+    this.titleService.setTitle('Wow! You got here. Someone checks the about page for this Accessibility Dev Day. Lookit you go!');
 
     /* 
       Task 7 - Make like orange juice and focus
