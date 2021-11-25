@@ -26,15 +26,4 @@ It's an Angular app so a lot of it is basically the things you need to have an A
 
 ### The Dev Day
 
-Now that we have our bearings, let's hop into [exercise 1](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-1)! There are 5 exercises, each with some number of tasks. Each exercise has its own branch - I encourage you to do it sequentially, but you're your own person so do what makes you happy. For those who want to hop around, here's a brief outline of the tasks for each exercise:  
-
-* [Exercise 1 - Don't be stupid and why should you care?](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-1): 
-    + 
-* [Exercise 2 - Do the things we all know we should](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-2): 
-    + 
-* [Exercise 3 - To the Lighthouse](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-3): 
-    + 
-* [Exercise 4 - The eye of man hath not heard](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-4): 
-    + 
-* [Exercise 5 - I think U2 wrote a song about this once](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-5)
-    + 
+Now that we have our bearings, let's hop into [exercise 1](https://github.com/rileyherman/accessibility-dev-day/tree/exercise-1)! There are 5 exercises, each with some number of tasks. Each exercise has its own branch - I encourage you to do it sequentially, but you're your own person so do what makes you happy. 
