@@ -67,7 +67,7 @@ import { Team } from 'src/app/model';
 
       Bonus task https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility
     -->
-    <div (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
+    <figure (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <!-- 
         Task 4b - Hey now; you're an alt star
 
@@ -99,7 +99,7 @@ import { Team } from 'src/app/model';
         Now that we have some alt text, let's move on to colour. See you in src/app/components/fixture/fixture.component.ts
       -->
       <img width="150" height="150" alt="" [src]="logo" />
-    </div>
+    </figure>
   `
 })
 export class TeamComponent {

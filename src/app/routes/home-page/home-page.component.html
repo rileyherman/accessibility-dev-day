@@ -1,7 +1,7 @@
 <app-header></app-header>
 <app-content>
     <div class="grid grid-cols-1 gap-4">
-        <div class="flex items-center justify-center">
+        <form class="flex items-center justify-center">
             <!-- 
                 Task 2 - Form is where the heart is
 
@@ -18,7 +18,7 @@
                 Once you have your label, move on to the next task in src/app/app.component.ts
             -->
             <input class="p-2 border rounded w-64 text-sm focus:ring-2" type="text" [formControl]="searchFormControl" />
-        </div>
+        </form>
         <div class="flex items-center flex-wrap">
             <ng-container *ngFor="let team of teams">
                 <app-team class="m-4" [team]="team" [onClick]="goToTeam(team.id)"></app-team>

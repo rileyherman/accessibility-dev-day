@@ -42,14 +42,14 @@ import { Fixture, Mood } from 'src/app/model';
     Talking about colour necessitates talking about text. We'll do that over in 
     src/app/routes/about-page/about-page.component.html
   -->
-  <div [class.ring-green-100]="happy" [class.ring-red-100]="sad" class="border shadow p-2 ring-2">
+  <section [class.ring-green-100]="happy" [class.ring-red-100]="sad" class="border shadow p-2 ring-2">
     <div class="flex items-center mb-2">
       <app-team class="mr-4" [team]="fixture.home.team"></app-team>
       <div class="mr-4 text-lg text-gray-900">VS</div>
       <app-team [team]="fixture.away.team"></app-team>
     </div>
     <div class="text-sm text-gray-700 text-center">{{date}}</div>
-  </div>
+  </section>
   `
 })
 export class FixtureComponent {
