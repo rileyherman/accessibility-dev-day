@@ -60,3 +60,5 @@ Finally, [here's a great list of tools by Harvard Accessibility](https://accessi
 * [Tanaguru, for corporate training and advice on accessibility](https://www.tanaguru.com/en/)
 
 If you want to do a manual, guided review of your website then I would highly suggest walking through with [this review from W3](https://www.w3.org/WAI/test-evaluate/preliminary/). 
+
+Once you've fixed the things in the reports, move straight on to exercise-4!
