@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { interval, Subscription } from 'rxjs';
 import { debounce, switchMap } from 'rxjs/operators';
@@ -16,9 +17,10 @@ export class HomePageComponent implements OnInit, OnDestroy {
   searchFormControl: FormControl = new FormControl('');
   valueChangesSub: Subscription = Subscription.EMPTY;
 
-  constructor(private footballService: FootballService, private router: Router) { }
+  constructor(private titleService: Title, private footballService: FootballService, private router: Router) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle('Accessibility Dev Day');
     this.footballService.getTeams().subscribe(t => this.teams = t);
     this.valueChangesSub = this.searchFormControl.valueChanges
       .pipe(

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { filter, map } from 'rxjs/operators';
 import { Fixture, FixtureTeam, Mood, Team } from '../model';
 // @ts-ignore
 import FIXTURES from '../data/epl-fixtures.json';
@@ -45,6 +45,21 @@ export class FootballService {
           logo: team.team.logo
         } as Team)))
       );
+  }
+
+  getTeam(teamId: number): Observable<Team> {
+    return of(TEAMS)
+      .pipe(
+        map(response => response.response
+          .filter((team: any) => team.team.id === teamId)
+          .map((team: any) => ({
+            id: team.team.id,
+            name: team.team.name,
+            logo: team.team.logo
+          } as Team))),
+          filter((teams: Team[]) => teams.length > 0),
+          map((teams: Team[]) => teams[0])
+        );
   }
 
   findTeams(query: string): Observable<Team[]> {
