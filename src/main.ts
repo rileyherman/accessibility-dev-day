@@ -20,14 +20,14 @@ platformBrowserDynamic().bootstrapModule(AppModule)
     Accessibility needs to be selected and Mobile or Desktop both are fine. If you're using
     Firefox, go to the Accessibility Tab and Check for Issues -> All issues. 
 
-    (Note that if you haven't done Task 1, that will be detected by 
-    Lighthouse - it's not garbage, it just doesn't stop you from being a moron). When you 
-    see the next task, remember that that didn't show up either.
+    (Note that if you haven't done Task 1, that will be detected by Lighthouse - it's not 
+    garbage, it just doesn't stop you from being a moron). When you see the next task, remember 
+    that that didn't show up either.
 
     You know what to do. Log a Github Issue of course! Everyone reads those, right? ... right?
     And you should probably delete the offending code.
 
-    (I stole this from https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/)
+    (I stole this and many other things from https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/)
     
     Next task in src/styles.css
   */
