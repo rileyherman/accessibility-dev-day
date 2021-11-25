@@ -31,7 +31,8 @@ import { Team } from 'src/app/model';
       - I know it's not 1998 but for goodness' sake do NOT use a <table> for layouts. A screen reader would 
         read it as a table for data and it would be borderline unusable for that user.
       - Consider including a <caption> or a summary attribute on <table>s that summarize the table's contents
-        or a <figcaption> for an <img>
+        or a <figcaption> for an <img>. This is good practice if only because seeing a bunch of data in a table 
+        can be lot of information to parse at once. 
       - Don't use an <a> tag when you mean a <button>. If you're tempted to put an href="#" or href="javascript:void(0)"
         on your <a>, you should reconsider.
       - Links that open in a new tab should indicate that they do so. This can be a jarring experience, 
@@ -41,12 +42,12 @@ import { Team } from 'src/app/model';
       of a resizable <textarea>), here are some things you can do to mimic the built in features:
       - include a tabindex attribute, tabindex="0" allows a non-tabbable element
         to be tabbed into (ie focused). You will also need to handle keyboard inputs (for example, adding an
-        event listener to call the onClick() when the Enter key is pressed on a fake button)
+        event listener to call the onClick() when the Enter key is pressed on a fake button). 
       - include an ARIA attribute. In Angular, this usually means binding to the ARIA attributes you need.
         See here for an example: https://angular.io/guide/accessibility#case-study-building-a-custom-progress-bar
         and here for a more in-depth look at ARIA https://developers.google.com/web/fundamentals/accessibility/semantics-aria
 
-      Tangentially realted to this is links and link text. Providing adequate context is very important for 
+      Tangentially related to this is links and link text. Providing adequate context is very important for 
       link text. Screen readers usually have a feature where they bring up a list of every link on the page - 
       thus removing the context. Text like "click me" can be very frustrating in this scenario. However, this 
       isn't event a problem for this piece of code yet - it's still a div, so it won't even show up on the 
@@ -62,12 +63,14 @@ import { Team } from 'src/app/model';
 
       So here's your task: fix this. Specifically: the improper use of a <div> for a link, the <img> link 
       (either make it not an image link or provide a better image link), and the sub task about alt text.
+      Bonus: do it another way! you can use aria attributes, tabindex, keyboard events, changing the HTML
+      tag - lots of ways to complete this one!
 
       Reference https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
 
       Bonus task https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility
     -->
-    <figure tabindex="0" (keyup.enter)="handleClick()" (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
+    <div (click)="handleClick()" [ngClass]="{ 'cursor-pointer hover:shadow-md': !!onClick }" class="flex justify-center p-2">
       <!-- 
         Task 4b - Hey now; you're an alt star
 
@@ -99,7 +102,7 @@ import { Team } from 'src/app/model';
         Now that we have some alt text, let's move on to colour. See you in src/app/components/fixture/fixture.component.ts
       -->
       <img width="150" height="150" alt="" [src]="logo" />
-    </figure>
+    </div>
   `
 })
 export class TeamComponent {

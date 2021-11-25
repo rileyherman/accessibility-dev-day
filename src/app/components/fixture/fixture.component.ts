@@ -9,7 +9,7 @@ import { Fixture, Mood } from 'src/app/model';
 
     I'll cut to the chase on this one - don't use only colour to convey meaning. If someone can't see
     well, they won't get the meaning. It's as simple as that. In this task, the ring on the card conveys
-    whether you should watch the match. Add another indication in an accessible way.
+    whether you should watch the match. Add another indication or replace it in an accessible way.
 
     If we talk about colour, we need to talk about contrast. Not only is the colour the only thing 
     conveying meaning, but the green-100 is not an obvious colour contrast to make it usable for the 
@@ -25,7 +25,7 @@ import { Fixture, Mood } from 'src/app/model';
     what it's worth, the Canadian government regulation for their websites is AA. Since bigger text is
     easier to see, the contrast ratio is less for 18pt+ text. 
     Less than 18pt: 4.5:1 (example of 4.557:1 https://snook.ca/technical/colour_contrast/colour.html#fg=757575,bg=000000)
-    More than 18pt: 3:1 (example of 3.339:1 https://snook.ca/technical/colour_contrast/colour.html#fg=606060,bg=000000)
+    More than 18pt: 3:1 (example of 3.022:1 https://snook.ca/technical/colour_contrast/colour.html#fg=595960,bg=000000)
 
     Tailwind colours are very good at complying at the AA level: a red-100 on gray-100 background, 
     for example, is compliant. While the ring is not necessarily text, it is conveying meaning so
@@ -34,8 +34,12 @@ import { Fixture, Mood } from 'src/app/model';
 
     One more thing with colours - a significant chunk of the population has some vision disabilities.
     If you aren't, it's tough to know what those users see when they look at your app. There are a few
-    ways to get this but my favourite is the Chrome plugin Funkify (https://www.funkify.org). Funkify 
-    let's you impersonate users with different visual abilities and disabilities easily. I highly 
+    ways to get this but my favourites are:
+    
+    * The Chrome plugin Funkify (https://www.funkify.org)
+    * Web Disability Simulator (https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla)
+
+    These let you impersonate users with different visual abilities and disabilities easily. I highly 
     recommend you check your colours with people with colour blindnesses as well as checking your text
     (in the next exercise). 
 
