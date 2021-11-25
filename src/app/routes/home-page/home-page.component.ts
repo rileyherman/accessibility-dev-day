@@ -20,7 +20,7 @@ export class HomePageComponent implements OnInit, OnDestroy {
   constructor(private titleService: Title, private footballService: FootballService, private router: Router) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle('Accessibility Dev Day');
+    // this.titleService.setTitle('Accessibility Dev Day');
     this.footballService.getTeams().subscribe(t => this.teams = t);
     this.valueChangesSub = this.searchFormControl.valueChanges
       .pipe(

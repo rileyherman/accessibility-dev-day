@@ -2,7 +2,7 @@
 
 ### Exercise 3 - To the Lighthouse
 
-There's been a lot fo scratching the surface of topics in this workshop - the reason being that accessibility can be affected in a variety of ways
+There's been a lot of scratching the surface of topics in this workshop - the reason being that accessibility can be affected in a variety of ways
 by a variety of decsions. It's a lot to keep in mind. In this exercise, we're going to go through some tools for checking accessibility.
 
 Quick app note - running the app in dev mode is generally not the most accurate way to run the tests. If you would like to fork the repo and publish 
@@ -29,6 +29,10 @@ The Firefox equivalent is the [Accessibility](https://developer.mozilla.org/en-U
 Select "All issues" from the "Check for issues" dropdown. In the editor window you can see the accessibility tree and any issues get an exclamation mark. 
 The biggest complaint you'll often see in this tool is keyboard naviagability, but it also checks colour contrast as well as text labels. 
 
+If you installed either Funkify or Web Disability Simulator in your Chrome, you may have noticed that I didn't give a Firefox suggestion. 
+There's a simulator built into this tab - feel free to play around with that as well! You'll probably notice that it isn't quite as comprehensive, 
+but it's good at what it does. 
+
 Mess around in there. It's a little less user friendly, so I encourage you to follow the [docs](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
 
 #### Out of the box? In another box? Whatever the saying is.
@@ -52,7 +56,7 @@ Finally, [here's a great list of tools by Harvard Accessibility](https://accessi
 * [A tool for checking the accessibility of surveys](https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/check-survey-accessibility/#AccessibleAndNonAccessibleQuestionTypes)
 * [A photosensitive epilepsy analysis tool](https://trace.umd.edu/peat/)
 * [The W3C HTML checker](https://validator.w3.org/nu/) (you can check this site - my one complaint is that it doesn't detech `<div>` soup so this site does alright)
-* [A PDF accessibility checker](https://www.access-for-all.ch/en/pdf-accessibility-checker.html)
+* [A PDF accessibility checker](https://www.access-for-all.ch/en/pdf-accessibility-checker.html) - the funny part about this to me is that PDFs don't work with a screen reader
 * [Tanaguru, for corporate training and advice on accessibility](https://www.tanaguru.com/en/)
 
 If you want to do a manual, guided review of your website then I would highly suggest walking through with (this review from W3](https://www.w3.org/WAI/test-evaluate/preliminary/). 

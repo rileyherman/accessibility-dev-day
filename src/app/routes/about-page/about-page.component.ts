@@ -11,7 +11,7 @@ export class AboutPageComponent implements OnInit {
   constructor(private titleService: Title, private router: Router) { }
   
   ngOnInit(): void {
-    this.titleService.setTitle('About - Accessibility Dev Day');
+    // this.titleService.setTitle('About - Accessibility Dev Day');
   }
 
   back = () => {
