@@ -14,7 +14,11 @@
                 If you don't like the design of that, you can once again leverage aria to get a label. The attribute is
                 aria-label and will seem exactly the same as a regular label for a screen reader, but it won't show up 
                 visually. If you have a button (such as in a search bar), you can also use aria-labelledby with the id of 
-                the button and the screen reader will read the button text as the label.
+                the button and the screen reader will read the button text as the label. You can verify that this worked
+                by finding the input in the accessibility tree
+
+                Oddly enough, there's no guarantee placeholder text will be read by all screen readers so I'd recommend
+                you don't count on it. It will show up in the accessibility tree in your browser so be careful!
 
                 Aside - another thing to consider with inputs is use of colour. If a red outline is the only indication 
                 that somethig is awry, someone who cannot see it will be confused. This is often why you see asterisks 
@@ -22,7 +26,7 @@
 
                 Once you have your label, move on to the next task in src/app/app.component.ts
             -->
-            <input class="p-2 border rounded w-64 text-sm focus:ring-2" type="text" [formControl]="searchFormControl" />
+            <input placeholder="Filter" class="p-2 border rounded w-64 text-sm focus:ring-2" type="text" [formControl]="searchFormControl" />
         </form>
         <div class="flex items-center flex-wrap">
             <ng-container *ngFor="let team of teams">
