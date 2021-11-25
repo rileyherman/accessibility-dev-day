@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
         <h3>Is the replay worth it?</h3>
       </div>
       <nav class="flex items-center hidden xl:block text-lg">
-        <a id="same_id" class="cursor-pointer mr-4" tabindex="0" href="/about">About</a>
+        <button id="same_id" class="cursor-pointer mr-4" (click)="about()">About</button>
       </nav>
       <nav class="flex items-center xl:hidden">
-        <a id="same_id" tabindex="0" href="/about"><span class="material-icons cursor-pointer mr-4">help_outline</span></a>   
+        <button id="same_id" (click)="about()"><span class="material-icons cursor-pointer mr-4">help_outline</span></button>   
       </nav>
     </header>
   `
